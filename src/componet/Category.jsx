@@ -11,9 +11,18 @@ import samsung from "../assets/phone-category/samsung.webp"
 import redmi from "../assets/phone-category/Redmi.webp"
 import onePluse from "../assets/phone-category/1+.jpg"
 import realme from "../assets/phone-category/realme.jpg"
+import Section_title from './Section_title';
 
 const Category = () => {
     return (
+
+        <section>
+            
+            <Section_title
+            subheading={'---From 11:00am to 10:00pm---'}
+            heading={"ORDER ONLINE"}
+            >   
+            </Section_title>
         <div className='py-14'>
              <Swiper
         slidesPerView={3}
@@ -22,7 +31,7 @@ const Category = () => {
           clickable: true,
         }}
         modules={[Pagination]}
-        className="mySwiper"
+        className="mySwiper "
       >
         <SwiperSlide>
             <img className='rounded-3xl md:h-[500px]   object-cover' src={iphone} alt="" />
@@ -62,6 +71,7 @@ const Category = () => {
         </SwiperSlide>
       </Swiper>
         </div>
+        </section>
     );
 };
 
